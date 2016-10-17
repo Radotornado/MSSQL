@@ -1,0 +1,5 @@
+ALTER TABLE Users
+ADD UNIQUE (Username)
+
+ALTER TABLE Users
+ADD CONSTRAINT UserMinSize CHECK (LEN(Username) >= 3)

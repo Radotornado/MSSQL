@@ -1,0 +1,5 @@
+-- Games From 2011 And 2012 Year
+SELECT TOP 50 Name, CONVERT(VARCHAR(10), Start, 126) AS "Start"
+FROM [dbo].[Games]
+WHERE Start BETWEEN '20110101' AND '20121231'
+ORDER BY Start

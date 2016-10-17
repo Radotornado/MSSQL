@@ -1,0 +1,3 @@
+SELECT TOP 50 G.Name AS "Game", CONVERT(VARCHAR(10), G.Start, 126) AS "Start" FROM [dbo].Games AS G
+WHERE G.Start BETWEEN '20110101' AND '20121231'
+ORDER BY G.Start, G.Name

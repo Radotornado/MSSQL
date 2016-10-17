@@ -1,0 +1,6 @@
+ALTER TABLE minions
+ADD townId INT
+
+ALTER TABLE minions
+ADD FOREIGN KEY (townId)
+REFERENCES towns(Id)
